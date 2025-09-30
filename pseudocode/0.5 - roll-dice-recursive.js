@@ -18,3 +18,21 @@
   // close the else block
 
 // close the function block
+var counter = 0;
+function rollDice() { 
+
+  let roll = Math.floor(Math.random()*6)+1;
+  counter +=1
+
+ if (roll == 6) {
+    alert("6! You won in " + counter);
+counter = 0;
+ }
+
+else {
+
+    rollDice();
+
+}
+
+}
